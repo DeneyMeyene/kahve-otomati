@@ -27,22 +27,20 @@ class color:
     def __init__(self,master = None) -> None:
         self.master = master
         self.color = None
-        self.dict = {"bg":"blue"}
-        self.colorize()
-    def colorize(self):
-        self.master.configure(self.dict)
+    def colorize(self,dict):
+        self.master.configure(dict)
     
     def labelC(self,dict):
-        self.label.configure()
+        self.label.configure(dict)
     
     def entryC(self,dict):
-        self.ent.configure()
+        self.ent.configure(dict)
     
     def btn(self,dict):
-        self.butn.configure()
+        self.butn.configure(dict)
     
     def checkC(self,dict):
-        self.chc.configure()
+        self.chc.configure(dict)
 
 class front:
     def __init__(self,master = None) -> None:
